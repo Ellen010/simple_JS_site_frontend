@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Mont";
+  src: url("/fonts/Mont-Heavy.otf");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-family: "Mont";
+  font-size: 22px;
+  margin: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.input {
+  height: 40px;
+  width: 200px;
+  margin-bottom: 15px;
+  border: 1px rgb(114, 131, 148) solid;
+  border-radius: 3px;
+  background-color: transparent;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.input:focus {
+  outline: none;
+  background-color: transparent;
+}

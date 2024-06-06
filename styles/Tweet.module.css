@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Mont";
+  src: url("/fonts/Mont-Heavy.otf");
+}
+
+.container {
+  border: rgba(114, 131, 148, 0.455) solid;
+  border-width: 1px 0px 0px 0px;
+  padding: 20px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.content {
+  margin: 0;
+  margin-left: 12px;
+}
+
+.like,
+.delete {
+  cursor: pointer;
+}
+
+.like {
+  margin-right: 5px;
+  color: white;
+}
+
+.delete {
+  margin-left: 10px;
+  color: white;
+}
+
+.name {
+  font-family: "Mont";
+}
+
+.name,
+.greyText {
+  font-size: 15px;
+}
+
+.greyText {
+  color: rgb(114, 131, 148);
+}

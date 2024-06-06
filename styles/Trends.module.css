@@ -1,0 +1,26 @@
+.container {
+  max-height: 85vh;
+  margin: 20px;
+  background-color: #1E2732;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.tweetContainer {
+  padding: 20px 0px 10px 20px;
+  cursor: pointer;
+}
+
+.tweetContainer:hover {
+  background-color: #273443;
+}
+
+.hashtag {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.nbrTweet {
+  color: rgb(114, 131, 148);
+  font-size: 12px;
+}

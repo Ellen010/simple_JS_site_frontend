@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Mont';
+  src: url('/fonts/Mont-Heavy.otf');
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: #15202B;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 23vw;
+  padding: 25px 0px 25px 50px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.logo {
+  cursor: pointer;
+}
+
+.rotate {
+  animation: rotate 10s linear infinite; 
+}
+
+.middleSection {
+  height: 100vh;
+  width: 45vw;
+  border: rgba(114, 131, 148, 0.455) solid;
+  border-width: 0px 1px 0px 1px;
+  overflow: scroll;
+}
+
+.middleSection::-webkit-scrollbar {
+  background: transparent;
+  width: 0px;
+}
+
+.rightSection {
+  height: 100vh;
+  width: 32vw;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.name {
+  margin-right: 5px;
+  font-size: 15px;
+  font-family: 'Mont';
+  margin-bottom: 0;
+}
+
+.username {
+  font-size: 15px;
+  color: rgb(114, 131, 148);
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 75px;
+  background-color: transparent;
+  border: 1px rgb(114, 131, 148) solid;
+  border-radius: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.logout:hover {
+  background-color: #24374a;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.createSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.validateTweet {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.input {
+  width: 80%;
+  height: 50px;
+  background-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 90px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  background-color: #409BF1;
+  border: none;
+  border-radius: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3384cf;
+}

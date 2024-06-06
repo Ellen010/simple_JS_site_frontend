@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Mont";
+  src: url("/fonts/Mont-Heavy.otf");
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.leftSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 40vw;
+  background-image: url('https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png');
+}
+
+.rightSection {
+  height: 100vh;
+  width: 60vw;
+  padding: 30px;
+  background-color: #15202b;
+  font-family: "Mont";
+}
+
+.signUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  margin-bottom: 15px;
+  background-color: #409BF1;
+  border-radius: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.signUp:hover {
+  background-color: #3384cf;
+}
+
+.signIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  border: 1px rgb(114, 131, 148) solid;
+  border-radius: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.signIn:hover {
+  background-color: #24374a;
+}
+
+.signUpText {
+  color: white;
+}
+
+.title {
+  margin-top: 50px;
+}

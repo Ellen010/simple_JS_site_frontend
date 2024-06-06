@@ -1,0 +1,11 @@
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(114, 131, 148, 0.455) solid;
+}
