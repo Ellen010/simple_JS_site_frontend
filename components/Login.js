@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 import styles from '../styles/Login.module.css';
@@ -11,6 +11,7 @@ function Login() {
   const user = useSelector((state) => state.user.value);
   const [signUpModalVisible, setSignUpModalVisible] = useState(false);
   const [signInModalVisible, setSignInModalVisible] = useState(false);
+  const [logoPosition, setLogoPosition] = useState({ x: 250, y: 300 });
 
   const showSignUpModal = () => {
     setSignUpModalVisible(true);
@@ -28,6 +29,11 @@ function Login() {
     setSignInModalVisible(false);
   };
 
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setLogoPosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+  };
+
   // Redirect to /home if logged in
   const router = useRouter();
   if (user.token) {
@@ -36,8 +42,16 @@ function Login() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.leftSection}>
-        <Image src="/logo.png" alt="Logo" width={300} height={300} />
+      <div 
+        className={styles.leftSection} 
+        onMouseMove={handleMouseMove}
+      >
+        <div 
+          className={styles.logo} 
+          style={{ top: logoPosition.y, left: logoPosition.x }}
+        >
+          <Image src="/logo.png" alt="Logo" width={300} height={300} />
+        </div>
       </div>
       <div className={styles.rightSection}>
         <Image src="/logo.png" alt="Logo" width={50} height={50} />
