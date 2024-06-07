@@ -20,7 +20,7 @@ function SignUp() {
   const [password, setPassword] = useState('');
 
   const handleSubmit = () => {
-    fetch('https://verceldemo-backend.vercel.app/users/signup', {
+    fetch('https://novatweet-frontend.vercel.app/users/signup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ firstName, username, password }),
