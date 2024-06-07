@@ -31,7 +31,7 @@ function Hashtag() {
 
     setQuery('#' + hashtag);
 
-    fetch(`https://novatweet-frontend.vercel.app/tweets/hashtag/${user.token}/${hashtag}`)
+    fetch(`https://simple-js-site-backend.vercel.app/tweets/hashtag/${user.token}/${hashtag}`)
       .then(response => response.json())
       .then(data => {
         data.result && dispatch(loadTweets(data.tweets));
