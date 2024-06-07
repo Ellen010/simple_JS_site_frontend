@@ -31,7 +31,7 @@ function Hashtag() {
 
     setQuery('#' + hashtag);
 
-    fetch(`http://localhost:3000/tweets/hashtag/${user.token}/${hashtag}`)
+    fetch(`https://verceldemo-backend.vercel.app/tweets/hashtag/${user.token}/${hashtag}`)
       .then(response => response.json())
       .then(data => {
         data.result && dispatch(loadTweets(data.tweets));
