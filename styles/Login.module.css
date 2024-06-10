@@ -86,10 +86,10 @@
 
 .title {
   margin-top: 20px;
-  font-size: 80px;
+  font-size: 70px;
   animation: shineAnimation 1s infinite alternate;
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 @keyframes shineAnimation {
