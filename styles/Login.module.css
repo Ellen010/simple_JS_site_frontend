@@ -32,8 +32,8 @@
 .rightSection {
   height: 100vh;
   width: 60vw;
-  margin-left: 20px;
-  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
   background-color: #15202b;
   font-family: "Mont";
 }
