@@ -50,7 +50,7 @@ function Home() {
   };
 
   const handleSubmit = () => {
-    fetch('https://simple-js-site-backend.vercel.app/tweets', {
+    fetch(`https://simple-js-site-backend.vercel.app/tweets`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ token: user.token, content: newTweet }),

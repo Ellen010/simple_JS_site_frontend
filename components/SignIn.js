@@ -19,7 +19,7 @@ function SignIn() {
   const [password, setPassword] = useState('');
 
   const handleSubmit = () => {
-    fetch('https://simple-js-site-backend.vercel.app/users/signin', {
+    fetch(`https://simple-js-site-backend.vercel.app/users/signin`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password }),
@@ -30,9 +30,10 @@ function SignIn() {
   };
 
   return (
+    
     <div className={styles.container}>
       <Image src="/logo.png" alt="Logo" width={50} height={50} />
-      <h3 className={styles.title}>Connect to Hackatweet</h3>
+      <h3 className={styles.title}>Connect to Novatweet</h3>
       <input type="text" className={styles.input} onChange={(e) => setUsername(e.target.value)} value={username} placeholder="Username" />
       <input type="password" className={styles.input} onChange={(e) => setPassword(e.target.value)} value={password} placeholder="Password" />
       <button className={styles.button} onClick={() => handleSubmit()}>Sign in</button>
