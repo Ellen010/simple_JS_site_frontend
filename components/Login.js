@@ -55,8 +55,8 @@ function Login() {
       </div>
       <div className={styles.rightSection}>
         <Image src="/logo.png" alt="Logo" width={50} height={50} />
-        <h2 className={styles.title}>See what’s<br></br>happening</h2>
-        <h3>Join Novatweet today.</h3>
+        <h2 className={styles.title}>Join our platform<br></br>today</h2>
+        <h3>Exchange posts with the whole world!</h3>
         <div onClick={() => showSignUpModal()} className={styles.signUp}><a className={styles.signUpText}> Sign up</a></div>
         <p>Already have an account?</p>
         <div onClick={() => showSignInModal()} className={styles.signIn}><a> Sign in</a></div>
